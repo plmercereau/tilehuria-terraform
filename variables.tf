@@ -1,23 +1,28 @@
-variable "aws_region" {
+variable "gcp_region" {
   type    = string
-  default = "us-west-1"
+  default = "us-central1"
 }
 
-variable "db_table_name" {
+variable "gcp_zone" {
   type    = string
-  default = "terraform-learn"
+  default = "us-central1-c"
 }
 
-variable "db_read_capacity" {
-  type    = number
-  default = 1
-}
+# variable "db_table_name" {
+#   type    = string
+#   default = "terraform-learn"
+# }
 
-variable "db_write_capacity" {
-  type    = number
-  default = 1
-}
+# variable "db_read_capacity" {
+#   type    = number
+#   default = 1
+# }
 
-variable "tag_user_name" {
+# variable "db_write_capacity" {
+#   type    = number
+#   default = 1
+# }
+
+variable "project_id" {
   type = string
 }

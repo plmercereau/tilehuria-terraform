@@ -1,8 +1,8 @@
 provider "google-beta" {
   credentials = "${file("account.json")}"
-  project     = "tilehuria"
-  region      = "us-central1"
-  zone        = "us-central1-c"
+  project     = var.project_id
+  region      = var.gcp_region
+  zone        = var.gcp_zone
 }
 
 resource "google_compute_instance" "vm_instance" {
